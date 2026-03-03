@@ -16,15 +16,24 @@ body {
 
 /* HERO SECTION */
 
-.hero h1 {
-    background-color: #F0F8FF;
-    color: #2F4F4F;
+.hero {
+    background-color: #F0F8FF; /* blue rectangle behind entire hero */
+    display: flex;
+    flex-direction: column;     /* stack children vertically */
+    align-items: center;        /* center horizontally */
+    justify-content: center;    /* center vertically if needed */
+    padding: 60px 20px 100px 20px; /* top, sides, bottom */
+    width: 100%;
     text-align: center;
+}
+
+.hero h1 {
+    color: #2F4F4F;
     font-size: 50px;
     font-weight: 700;
     line-height: 1.2;
-    margin-top: 20px;     /* space above title */
-    margin-bottom: 50px; /* space after title */
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .authors {
@@ -34,7 +43,7 @@ body {
     flex-wrap: wrap;             /* stack on mobile if screen is narrow */
     margin-bottom: 20px;
     color: #2F4F4F;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .author {
@@ -44,7 +53,8 @@ body {
 
 .affiliation {
     font-style: italic;
-    color: #2F4F4F
+    color: #2F4F4F;
+    font-size: 10px;
 }
 
 .email {
