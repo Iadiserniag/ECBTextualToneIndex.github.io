@@ -37,36 +37,28 @@ body {
 }
 
 .authors {
-    text-align: center;           /* center all authors */
+    display: flex;
+    justify-content: space-evenly; /* equal space around each author */
+    flex-wrap: nowrap;             /* stay on one line */
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 100%;                   /* stretch full width */
 }
 
 .author {
-    margin-bottom: 30px;          /* vertical space between the two authors */
-    line-height: 1.2;             /* compact line spacing inside each author */
-}
-
-.author strong,
-.author .affiliation,
-.author .email {
-    display: block;               /* each on its own line */
-    margin: 0;                    /* remove extra space between them */
-}
-
-.author strong {
-    font-size: 22px;
+    width: 300px;                  /* fixed width for symmetry */
 }
 
 .affiliation {
     font-style: italic;
-    font-size: 18px;
     color: #2F4F4F;
+    font-size: 18px;
 }
 
 .email {
-    font-size: 15px;
     color: #888;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -145,7 +137,7 @@ h2 {
   <div class="authors">
       <div class="author">
           <strong>Giulia Iadisernia</strong><br>
-          <span class="affiliation">Banca d'Italia, Sapienza University of Rome</span><br>
+          <span class="affiliation">Sapienza University of Rome</span><br>
           <a href="mailto:iadisernia@diag.uniroma1.it" class="email">iadisernia@diag.uniroma1.it</a>
       </div>
       <div class="author">
