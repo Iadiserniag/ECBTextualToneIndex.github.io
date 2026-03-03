@@ -16,19 +16,20 @@ body {
 
 /* HERO SECTION */
 /* background-color: #B0E0E6; */
+/* background: linear-gradient(to right, #B0E0E6, #87CEEB); /* optional gradient */*/
 .hero {
-    background: linear-gradient(to right, #B0E0E6, #87CEEB); /* optional gradient */
+    background-color: #B0E0E6;
     padding: 40px 20px 100px 20px; /* top 40px, bottom 100px */
     text-align: center;
 }
 
 .hero h1 {
     color: #2F4F4F;
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 1.2;
     margin-top: 10px;     /* space above title */
-    margin-bottom: 40px; /* space after title */
+    margin-bottom: 50px; /* space after title */
 }
 
 .authors {
@@ -36,7 +37,7 @@ body {
     justify-content: center;     /* center the group */
     gap: 100px;                  /* space between authors */
     flex-wrap: wrap;             /* stack on mobile if screen is narrow */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #2F4F4F;
 }
 
@@ -66,9 +67,9 @@ body {
 
 .button {
     display: inline-block;
-    padding: 18px 25px;   /* Bigger */
-    margin: 2px;          /* Closer together */
-    font-size: 18px;
+    padding: 15px 20px;   /* Bigger */
+    margin: 1px;          /* Closer together */
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     border-radius: 8px;
@@ -82,7 +83,7 @@ body {
 
 /* GITHUB BUTTON */
 .github-btn {
-    background-color: #808080;   /* GitHub gray */
+    background-color: #696969;   /* GitHub gray */
     color: white;
 }
 
@@ -94,17 +95,19 @@ body {
 
 /* CONTENT SECTION */
 .container {
+    text-align: center;
     max-width: 900px;
     margin: auto;
     padding: 60px 20px;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 35px;
     margin-bottom: 20px;
 }
 
 .abstract {
+    color: #2F4F4F;
     margin-bottom: 40px;
     font-size: 17px;
     color: #333;
@@ -123,7 +126,8 @@ h2 {
 <!-- HERO -->
 <section class="hero">
     <h1>Let’s Talk About It: A NLP Approach<br>
-     to Evaluate Monetary Policy Communication</h1>
+     to Evaluate Monetary Policy<br>
+     Communication</h1>
 
   <div class="authors">
       <div class="author">
@@ -158,7 +162,7 @@ h2 {
         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     </p>
 
-    <img src="assets/images/nlp_pipeline_ex3.png" alt="NLP pipeline" class="paper-image">
+    <img src="assets/nlp_pipeline_ex3.png" alt="NLP pipeline" class="paper-image">
 </section>
 
 </body>
