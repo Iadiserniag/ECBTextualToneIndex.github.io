@@ -21,7 +21,7 @@ body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     color: #222;
 }
 
@@ -197,11 +197,18 @@ h2 {
     <h2>Abstract</h2>
 
     <p class="abstract">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        We develop and validate an NLP pipeline to quantify the textual tone of ECB press conferences. Leveraging a RoBERTa-large Transformer model,
+        our pipeline identifies sentences relevant to monetary policy, classifies them into five ordered sentiment categories-ranging from strongly dovish
+        to strongly hawkish-and aggregates sentence-level scores into a document-level textual tone score index. To account for contextual ambiguity, each
+        sentence is augmented with information about the prevailing inflation regime. The model is trained and evaluated on a manually labeled sample of press
+        conferences and then applied to construct a time series covering all conferences from 2000 to 2025. We provide a twofold validation of the resulting
+        index. First, from a macroeconomic perspective, the tone index captures the underlying economic stance, mitigating omitted-variable bias in the
+        estimated relationship between policy rates and inflation. Second, from a macro-financial perspective, we show that financial markets respond to
+        communication surprise rather than to tone per se. After isolating the surprise component of press conference communication, we find that 2-year OIS
+        rates increase in response to hawkish communication surprises, confirming theoretical predictions. Our work contributes to the literature by providing
+        a transparent and reproducible framework for measuring central bank communication tone, addressing the limitations of previous studies that rely on
+        coarse sentiment scales, proprietary data and models, or sentence-level classification. The resulting ECB-specific index offers a novel quantitative
+        tool for both policy evaluation and economic research.
     </p>
 
     <img src="assets/nlp_pipeline_ex3.png" alt="NLP pipeline" class="paper-image">
