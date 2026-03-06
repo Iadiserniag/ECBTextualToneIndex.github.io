@@ -80,9 +80,13 @@ body {
     margin-bottom: 20px;
 }
 
-.author {
-    font-size: 20px;
-    white-space: nowrap;     /* prevent text inside author from breaking */
+.authors .author a {
+    color: #222;           /* black text */
+    text-decoration: none; /* remove underline */
+}
+
+.authors .author a:hover {
+    text-decoration: underline; /* underline on hover */
 }
 
 .affiliation {
