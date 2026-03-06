@@ -263,9 +263,6 @@ figcaption {
 
     <figure class="figure">
         <img src="assets/pipeline_overview.png" alt="NLP pipeline" class="paper-image">
-        <figcaption>
-             Overview of the NLP pipeline for sentiment classification
-        </figcaption>
     </figure>
 
     <h3>Step 1: First-Pass Relevance Filtering</h3>
@@ -285,7 +282,7 @@ figcaption {
     The model assigns each sentence one of five ordered sentiment labels representing the tone of the communication: strongly dovish, dovish, neutral, hawkish, and strongly hawkish.
     </p>
 
-    <h3>Step 4: Textual Tone Score Index Construction</h3>
+    <h3>Step 4: Textual Tone Score Index Computation</h3>
     <p class="text">
         In the final step of the pipeline, sentence-level predictions are aggregated to compute a single textual tone score for each press conference. 
     </p>
@@ -306,7 +303,7 @@ figcaption {
     </p>
     
     <p class="text">
-    where \(y_j\) represents the sentiment score assigned to sentence \(j\), \(w_j^{rel}\) denotes the relevance weight associated with the sentence, and \(N_i\) is the total number of sentences in press conference \(i\).
+    where \(\hat{y}_j\) represents the sentiment score assigned to sentence \(j\), \(w_j^{rel}\) denotes the relevance weight associated with the sentence, and \(N_i\) is the total number of sentences in press conference \(i\).
     </p>
 
     <p class="text">
